@@ -1,8 +1,31 @@
 *{
-    margin: 0;
-    padding: 0;
-    border: 0;
+    box-sizing: border-box;
 }
-.cabecalho{
-    background-color: blue;
+
+html, body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+
 }
+body{
+    background-color: var(--cor-fundo);
+}
+cabecalho{
+    display: flex;
+}
+.cabecalho-title{
+    background-color: #5300C8;
+    width: 100%;
+    height: 8vw;
+    padding: 20px, 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 30%;
+    height: 5vw;
+}
+
