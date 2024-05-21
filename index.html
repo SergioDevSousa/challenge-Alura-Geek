@@ -15,14 +15,39 @@
         </div>
     </header>
     <main>
-        <section class="produtos">
+        <section class="formulario-container">
+            <div class="formulario-div">
+                <h2>ADICIONAR PRODUTOS:</h2>
+                <form>
+                    <input id="nome" type="text" placeholder="nome...">
+                    <input id="valor" type="number" placeholder="valor...">
+                    <input id="imagem" type="text" placeholder="imagem...">
+
+                    <div class="formulario-botao">
+                        <input class="btn-subnit" type="submit" value="Enviar">
+                        <input class="btn-reset" type="reset" value="Limpar">
+                    </div>
+                </form>
+
+            </div>
 
         </section>
-        <section class="formulario">
+        <section class="produtos-container">
+            <h2>MEUS PRODUTOS:</h2>
+            <div class="produtos">
+
+            </div>
 
         </section>
     </main>
-    <footer>
+    <footer id="foooter">
+        <div class="footer-logo">
+            <img src="./src/imgens/Logo_cabecalho.png" alt="logo-rodape">
+        </div>
+        <div class="footer-dev">
+            <span>Desenvolvido por Sérgio Sousa &copy;</span>
+            <span>ALURA LATAM - 2024</span>
+        </div>
 
     </footer>
 </body>
