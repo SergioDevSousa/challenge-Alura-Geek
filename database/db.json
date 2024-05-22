@@ -1,0 +1,22 @@
+{
+    "products": [
+        {
+            "name": "Dark Vader",
+            "prince": "50",
+            "image": "https://img.olx.com.br/images/84/848384351895458.webp",
+            "id": 1
+        },
+        {
+            "name": "Flash",
+            "prince": "25",
+            "image": "https://mundofestas.vtexassets.com/arquivos/ids/611381-800-800?v=638095664759730000&width=800&height=800&aspect=true",
+            "id": 2
+        },
+        {
+            "name": "Dark Vader",
+            "prince": "50",
+            "image": "https://img.olx.com.br/images/84/848384351895458.webp",
+            "id": 3
+        }
+    ]
+}

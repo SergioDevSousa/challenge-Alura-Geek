@@ -1,46 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
     <title>AluraGeek</title>
+    <link rel="stylesheet" href="./src/reset.css">
+    <link rel="stylesheet" href="./src/fonte.css">
     <link rel="stylesheet" href="./src/style.css">
 </head>
+
 <body>
-    <header>
+    <header class="header">
         <div class="cabecalho">
             <div class="cabecalho-title">
                 <img src="./src/imgens/Logo_cabecalho.png" alt="logo-cabecalho">
             </div>
         </div>
     </header>
-    <main>
-        <section class="formulario-container">
-            <div class="formulario-div">
-                <h2>ADICIONAR PRODUTOS:</h2>
-                <form>
-                    <input id="nome" type="text" placeholder="nome...">
-                    <input id="valor" type="number" placeholder="valor...">
-                    <input id="imagem" type="text" placeholder="imagem...">
-
-                    <div class="formulario-botao">
-                        <input class="btn-subnit" type="submit" value="Enviar">
-                        <input class="btn-reset" type="reset" value="Limpar">
+    <main class="main-container">
+        <div class="principal-container">
+            <section class="principal-produtos">
+                <h1>MEUS PRODUTOS</h1>
+                <div data-produtos class="produtos-container">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="" alt="img-produto">
+                        </div>
                     </div>
-                </form>
 
-            </div>
+                    <div class="card-container--info">
+                        <p>Dark Veiga</p>
+                        <div class="card-container--value">
+                            <p>R$ 20</p>
+                            <button class="delete-button" data-id="${id}">
+                                <img src="" alt="Eliminar">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="formulario">
+                    <h1>ADICIONAR PRODUTOS:</h1>
+                    <form class="form-container" data-form>
+                        <input data-name type="text" placeholder="nome...">
+                        <input data-preco type="text" placeholder="valor...">
+                        <input data-imagem type="text" placeholder="imagem...">
 
-        </section>
-        <section class="produtos-container">
-            <h2>MEUS PRODUTOS:</h2>
-            <div class="produtos">
+                        <div class="btn-formulario-container">
+                            <button type="submit" class="button-submit" id="button">Enviar...</button>
+                            <button type="reset" class="button-clean" id="button">Limpar...</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
 
-            </div>
-
-        </section>
+        </div>
     </main>
-    <footer id="foooter">
+    <footer class="footer-container">
         <div class="footer-logo">
             <img src="./src/imgens/Logo_cabecalho.png" alt="logo-rodape">
         </div>
@@ -51,4 +74,5 @@
 
     </footer>
 </body>
+
 </html>
