@@ -2,19 +2,19 @@
     "products": [
         {
             "name": "Dark Vader",
-            "prince": "50",
+            "price": "50",
             "image": "https://img.olx.com.br/images/84/848384351895458.webp",
             "id": 1
         },
         {
             "name": "Flash",
-            "prince": "25",
+            "price": "25",
             "image": "https://img.olx.com.br/images/84/848384351895458.webp",
             "id": 2
         },
         {
             "name": "Dark Vader",
-            "prince": "50",
+            "price": "50",
             "image": "https://img.olx.com.br/images/84/848384351895458.webp",
             "id": 3
         }

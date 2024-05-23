@@ -1,6 +1,6 @@
 import {serviceProduts} from "../servicos/products-services.js";
 
-const productContainer = document.querySelector("[data-product]");
+const productContainer = document.querySelector("[data-products]");
 
 function createElement(name, price, image, id) {
     const card = document.createElement("div");
@@ -9,7 +9,7 @@ function createElement(name, price, image, id) {
     card.innerHTML = `
         <div class="card">
             <div class="img-container">
-                <img src="${image}" alt="${nome}">
+                <img src="${image}" alt="${name}">
             </div>
         </div>
 
@@ -30,9 +30,10 @@ function createElement(name, price, image, id) {
 const render = async () => {
     try {
         const listProduct = await serviceProduts.productList ();
-        listProduct.array.forEach(product => {
+
+        listProduct.forEach(product => {
             productContainer.appendChild(
-                createElement(product.name, product.price, producto.image, product.id)
+                createElement(product.name, product.price, product.image, product.id)
             );
             
         });

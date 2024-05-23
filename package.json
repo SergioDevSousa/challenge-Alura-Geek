@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "json-server --watch ./database/db.json --port 5501"
-  },
+    "start": "json-server --watch ./database/db.json --port 5501"},
   "keywords": [],
   "author": "",
   "license": "ISC"
