@@ -16,8 +16,8 @@ img{
     grid-template-columns: 1fr 1fr; /* Define duas colunas iguais */
     gap: 70px; /* Espaçamento entre as colunas */
     padding: 20px;
-    width: 1380px;
-    height: 1235px;
+    width: 100%;
+    height: auto;
 }
 
 .principal-container {
@@ -32,17 +32,18 @@ img{
     background-color: #f9f9f9; /* Apenas para visualização */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .principal-produtos h1{
     font-family: "Press Start 2P", system-ui;
-
+    text-align: center;
 }
 
 .produtos-container {
     display: flex;
     flex-direction: column;
     gap: 10px; /* Espaçamento entre os produtos */
+    box-shadow: 0px -10px 9.5px rgba(0, 0, 0, 0.25);
+    
 }
 
 .card {
@@ -68,31 +69,92 @@ img{
 }
 .formulario h1{
     font-family: "Press Start 2P", system-ui;
+    text-align: center;
+}
+form input{
+    padding: 15px;
+    border-radius: 40px;
+    border: solid 2.9px #03318c;
+    color: #03318c;
 }
 .form-container {
     display: flex;
     flex-direction: column;
+    box-shadow: 0px -10px 9.5px rgba(0, 0, 0, 0.25);
     gap: 10px;
-    width: 472px;
+    width: 600px;
     height: 517px;
     padding: 40px;
     gap: 40px;
+    border-radius: 20px;
+}
+::placeholder{
+    color: #03318c;
+    font-weight: 900;
+    font-family: "IBM Plex Mono", monospace;
 }
 
 .btn-formulario-container {
     display: flex;
     justify-content: space-between;
+    /* width: 500px; */
+    height: 55px;
+    /* padding: 0px 65px; */
+    gap: 13px;
+}
+.btn-formulario-container{
+    /* width: 450px; */
+    gap: 15px;
+}
+.button-submit{
+    background: #03318c;
+    color: white;
+    width: 450px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+.button-clean{
+    width: 450px;
+    border-radius: 15px;
+    font-size: 20px;
+    background: white;
+    
+}
+.footer-container {
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    padding: 64px;
+    background-color: #5300C8; /* Cor de fundo para visualização */
+    box-shadow: 0px -10px 9.5px rgba(0, 0, 0, 0.25);
+    text-align: center; /* Centraliza o texto dentro dos elementos */
+    width: 100%;
+    height: 232px;
 }
 
+.footer-logo img {
+    margin-top: 20px;
+    width: 374px; /* Garante que a imagem não exceda a largura do contêiner */
+    height: 56px; /* Mantém a proporção da imagem */
+}
 
-
-.footer-container{
-    background-color: #5300C8;
+.footer-dev {
+    margin-top: 10px; /* Espaçamento entre a logo e o texto */
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-size: 16px;
+    height: 16px;
+    color: #f9f9f9;
     width: 1440px;
     height: 232px;
-    padding: 64px;
-}
-.footer-dev{
-    font-family: "IBM Plex Mono", monospace;
 }
 
+.footer-dev span {
+    display: block; /* Garante que os spans fiquem em linhas separadas */
+    margin-top: 5px; /* Espaçamento entre as linhas de texto */
+    font-family: "IBM Plex Mono", monospace;
+    font-weight:  200;
+    font-size: 24px;
+    color: #f9f9f9;
+}
