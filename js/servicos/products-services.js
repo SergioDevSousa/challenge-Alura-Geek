@@ -1,11 +1,11 @@
 const productList = () => {
-    return fetch ("http://localhost:5501/products")
+    return fetch ("https://sergiodevsousa.github.io/apigeek/db.json/products")
     .then((res) => res.json())
     .catch((err) => console(err));
 }
 
 const creatProduct = (name, price, image) => {
-    return fetch ("http://localhost:5501/products" , {
+    return fetch ("https://sergiodevsousa.github.io/apigeek/db.json/products" , {
         method: "POST",
         headers: {
             "content-Type": "application/json",
@@ -20,7 +20,7 @@ const creatProduct = (name, price, image) => {
     .catch((err) => console.log(err));
 }
 const deleteProduct = (id) => {
-    return fetch(`http://localhost:5501/products/${productId}`, {
+    return fetch(`https://sergiodevsousa.github.io/apigeek/db.json/products/${productId}`, {
         method: 'DELETE',
         headers: {
             "Content-Type": "application/json",

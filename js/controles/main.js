@@ -74,7 +74,7 @@ form.addEventListener("submit", async (event) => {
 
 const deleteProduct = async (productId) => {
     try {
-        const response = await fetch(`http://localhost:5501/products/${productId}`, {
+        const response = await fetch(`https://sergiodevsousa.github.io/apigeek/db.json/products/${productId}`, {
             method: 'DELETE',
         });
 
