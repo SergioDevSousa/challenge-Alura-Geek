@@ -1,22 +1,16 @@
 {
-    "products": [
-        {
-            "name": "Dark Vader",
-            "price": "50",
-            "image": "https://img.olx.com.br/images/84/848384351895458.webp",
-            "id": 1
-        },
-        {
-            "name": "Flash",
-            "price": "25",
-            "image": "https://img.olx.com.br/images/84/848384351895458.webp",
-            "id": 2
-        },
-        {
-            "name": "Dark Vader",
-            "price": "50",
-            "image": "https://img.olx.com.br/images/84/848384351895458.webp",
-            "id": 3
-        }
-    ]
+  "products": [
+    {
+      "id": "575b",
+      "name": "Capitão America",
+      "price": "40",
+      "image": "https://images-americanas.b2w.io/produtos/01/00/img3/26388270/9/2638827058_1GG.jpg"
+    },
+    {
+      "id": "e301",
+      "name": "Thanos",
+      "price": "22",
+      "image": "https://images-americanas.b2w.io/produtos/5252432344/imagens/boneco-thanos-ultimato-vingadores-gigante-55-cm-mimo-toys/5252432344_1_large.jpg"
+    }
+  ]
 }

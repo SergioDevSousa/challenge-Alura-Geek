@@ -1,6 +1,6 @@
 /* cabeça~lho */
 
-.cabecalho-title{
+.cabecalho-title {
     background-color: #5300C8;
     width: 100%;
     height: 8vw;
@@ -9,7 +9,8 @@
     justify-content: center;
     align-items: center;
 }
-img{
+
+img {
     width: 30%;
     height: 5vw;
 }
@@ -18,78 +19,128 @@ img{
 
 .main-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Define duas colunas iguais */
-    gap: 70px; /* Espaçamento entre as colunas */
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
     padding: 20px;
     width: 100%;
     height: auto;
 }
 
 .principal-container {
-    display: contents; /* Permite que os filhos se tornem filhos diretos do grid container */
+    display: contents;
     width: 758px;
     height: 1115px;
     padding: 40px;
-    gap: 40px;
+    overflow-y: scroll;
 }
 
-.principal-produtos, .formulario {
-    background-color: #f9f9f9; /* Apenas para visualização */
+.principal-produtos,
+.formulario {
+    background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
 }
-.principal-produtos h1{
+
+.principal-produtos h1 {
     font-family: "Press Start 2P", system-ui;
     text-align: center;
+    margin-block: 10px;
 }
 
 .produtos-container {
     display: flex;
-    flex-direction: row;
-    gap: 10px; /* Espaçamento entre os produtos */
+    flex-wrap: wrap;
+    gap: 10px;
     box-shadow: 0px -10px 9.5px rgba(0, 0, 0, 0.25);
-    
+    overflow-y: scroll;
 }
 
+/* card */
 .card {
-    background: #5D04D9;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* gap: 35px; */
     width: 196px;
-    height: 240px;
-    padding: 10px;
-    border-radius: 5px;
-    border: solid 3px black;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    text-align: center;
+    min-height: 258px;
+    background-color: #5300C8;
+    border-radius: 10px;
+    border: black solid 2px;
+    max-height: 50vh;
 }
 
-.img-container img {
-    max-width: 100px; /* Ajuste conforme necessário */
-    border-radius: 8px;
-    width: 176px;
-    height: 174px;
+.img-container img{
+    width: 100%;
+    height: auto;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.card img {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    /* background-color: transparent;
+    border: transparent; */
 }
 
 .card-container--info {
     display: flex;
-    /* flex-direction: column; */
+    display: inline-block;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 15px;
+    font-weight: 400;
+    height: 19px;
+    color: #f9f9f9;
+    padding-bottom: 30%;
 }
-
-.card-container--value {
-    display: flex;
-    justify-content: space-between;
+.card-container--info p{
     align-items: center;
 }
-.formulario h1{
+.card-container--value {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 18px;
+    font-weight: 400;
+    gap: 100px;
+    margin-top: 10px;
+}
+.button-reset {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+.delete-button img {
+    /* background-color: #5300C8; */
+    border: transparent;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    position: absolute;
+
+
+}
+/* formulario */
+.formulario h1 {
     font-family: "Press Start 2P", system-ui;
     text-align: center;
+    margin-block: 10px;
 }
-form input{
+
+form input {
     padding: 15px;
     border-radius: 40px;
     border: solid 2.9px #03318c;
     color: #03318c;
 }
+
 .form-container {
     display: flex;
     flex-direction: column;
@@ -101,7 +152,8 @@ form input{
     gap: 40px;
     border-radius: 20px;
 }
-::placeholder{
+
+::placeholder {
     color: #03318c;
     font-weight: 900;
     font-family: "IBM Plex Mono", monospace;
@@ -113,10 +165,13 @@ form input{
     height: 55px;
     gap: 13px;
 }
-.btn-formulario-container{
+
+.btn-formulario-container {
     gap: 15px;
 }
+
 .button-submit{
+    font-family: "IBM Plex Mono", monospace;
     background: #03318c;
     color: white;
     width: 450px;
@@ -124,60 +179,41 @@ form input{
     font-size: 20px;
 }
 .button-clean{
-    width: 450px;
+    font-family: "IBM Plex Mono", monospace;
+    width: 100%;
+    height: auto;
     border-radius: 15px;
     font-size: 20px;
     background: white;
     
 }
 
-/* card
-
-
-.produto{
-    display: inline-block;
-}
-
-.card p{
-    color: white;
-    font-family: "IBM Plex Mono", monospace;
-}
-
-.nome__produto {
-    text-align: left;
-    margin-top: 2px;
-    font-weight: 200;
-}
-
-.preco__produto {
-    font-weight: 600;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
-
 /* rodape */
 .footer-container {
     display: flex;
-    flex-direction: column; /* Alinha os itens em coluna */
-    align-items: center; /* Centraliza horizontalmente */
-    justify-content: center; /* Centraliza verticalmente */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 64px;
-    background-color: #5300C8; /* Cor de fundo para visualização */
+    background-color: #5300C8;
     box-shadow: 0px -10px 9.5px rgba(0, 0, 0, 0.25);
-    text-align: center; /* Centraliza o texto dentro dos elementos */
+    text-align: center;
+    /* Centraliza o texto dentro dos elementos */
     width: 100%;
     height: 232px;
 }
 
 .footer-logo img {
     margin-top: 20px;
-    width: 374px; /* Garante que a imagem não exceda a largura do contêiner */
-    height: 56px; /* Mantém a proporção da imagem */
+    width: 374px;
+    /* Garante que a imagem não exceda a largura do contêiner */
+    height: 56px;
+    /* Mantém a proporção da imagem */
 }
 
 .footer-dev {
-    margin-top: 10px; /* Espaçamento entre a logo e o texto */
+    margin-top: 10px;
+    /* Espaçamento entre a logo e o texto */
     font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
     font-size: 16px;
@@ -188,10 +224,12 @@ form input{
 }
 
 .footer-dev span {
-    display: block; /* Garante que os spans fiquem em linhas separadas */
-    margin-top: 5px; /* Espaçamento entre as linhas de texto */
+    display: block;
+    /* Garante que os spans fiquem em linhas separadas */
+    margin-top: 5px;
+    /* Espaçamento entre as linhas de texto */
     font-family: "IBM Plex Mono", monospace;
-    font-weight:  200;
+    font-weight: 200;
     font-size: 24px;
     color: #f9f9f9;
 }
