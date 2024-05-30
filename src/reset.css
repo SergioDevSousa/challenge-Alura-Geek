@@ -55,13 +55,22 @@ img {
 	width: inherit;
 }
 
-button {
+button img{
 	font-family: inherit;
 	font-size: inherit;
 	color: inherit;
 	font-weight: inherit;
 	padding: 0;
 	background-color: unset;
+}
+.button-reset {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
 }
 
 input {

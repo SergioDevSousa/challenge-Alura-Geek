@@ -49,8 +49,8 @@ const addDeleteEventListeners = () => {
     const deleteButtons = document.querySelectorAll(".delete-button");
     deleteButtons.forEach(button => {
         button.addEventListener('click', function () {
-            const productId = this.getAttribute('data-id');
-            deleteProduct(productId);
+            const id = this.getAttribute('data-id');
+            deleteProduct(id);
         });
     });
 };
@@ -72,15 +72,15 @@ form.addEventListener("submit", async (event) => {
     }
 });
 
-const deleteProduct = async (productId) => {
+const deleteProduct = async (id) => {
     try {
-        const response = await fetch(`http://localhost:5501/products/${productId}`, {
+        const response = await fetch(`https://665882315c3617052648c8b8.mockapi.io/api/geek/products${id}`, {
             method: 'DELETE',
         });
 
         if (response.ok) {
             alert(`Produto excluído com sucesso`);
-            const productElement = document.querySelector(`.card [data-id="${productId}"]`).closest('.card');
+            const productElement = document.querySelector(`.card [data-id="${id}"]`).closest('.card');
             if (productElement) {
                 productElement.remove();
             }
@@ -93,4 +93,3 @@ const deleteProduct = async (productId) => {
 };
 
 document.addEventListener('DOMContentLoaded', render);
-
