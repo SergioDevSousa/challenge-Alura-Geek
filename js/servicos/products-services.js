@@ -1,11 +1,11 @@
 const productList = () => {
-    return fetch ("https://665882315c3617052648c8b8.mockapi.io/api/geek/products")
+    return fetch ("https://665882315c3617052648c8b8.mockapi.io/api/geek/products/")
     .then((res) => res.json())
     .catch((err) => console(err));
 }
 
 const creatProduct = (name, price, image) => {
-    return fetch ("https://665882315c3617052648c8b8.mockapi.io/api/geek/products" , {
+    return fetch ("https://665882315c3617052648c8b8.mockapi.io/api/geek/products/" , {
         method: "POST",
         headers: {
             "content-Type": "application/json",
