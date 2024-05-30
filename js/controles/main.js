@@ -16,7 +16,7 @@ function createElement(name, price, image, id) {
             <div class="card-container--info">
                 <p>${name}</p>
                     <div class="card-container--value">
-                        <p>R$ ${price}</p>
+                        <p>$ ${price}</p>
                         <button class="delete-button button-reset" data-id="${id}">
                         <img src="./src/imgens/🦆 icon _trash2.png" alt="excluir">
                         </button>
@@ -74,7 +74,7 @@ form.addEventListener("submit", async (event) => {
 
 const deleteProduct = async (productId) => {
     try {
-        const response = await fetch(`https://sergiodevsousa.github.io/apigeek/db.json/products/${productId}`, {
+        const response = await fetch(`http://localhost:5501/products/${productId}`, {
             method: 'DELETE',
         });
 
@@ -93,75 +93,4 @@ const deleteProduct = async (productId) => {
 };
 
 document.addEventListener('DOMContentLoaded', render);
-
-// const render = async () => {
-//     try {
-//         const listProduct = await serviceProduts.productList();
-
-//         listProduct.forEach(product => {
-//             productContainer.appendChild(
-//                 createElement(product.name, product.price, product.image, product.id)
-//             );
-
-//         });
-//     } catch (error) {
-//     }
-// };
-
-// form.addEventListener("submit", (event) => {
-//     event.preventDefault()
-//     const name = document.querySelector("[data-name]").value;
-//     const price = document.querySelector("[data-price]").value;
-//     const image = document.querySelector("[data-image]").value;
-
-
-//     serviceProduts
-//         .creatProduct(name, price, image)
-//         .then((res) => console.log(res))
-//         .catch((err) => console.log(err));
-
-
-// });
-
-// render();
-
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     // Adiciona um listener de evento para cada botão
-//     deleteButtons.forEach(button => {
-//         button.addEventListener('click', function () {
-//             // Obtém o ID do produto a partir do atributo data-id
-//             const productId = this.getAttribute('.delete-button');
-
-//             // Chama a função para excluir o produto
-//             deleteProduct(productId);
-//         });
-//     });
-// });
-
-// // Definição da função deleteProduct
-// function deleteProduct(productId) {
-//     fetch(`/api/products/${productId}`, {
-//         method: 'DELETE',
-//     })
-//     .then(response => {
-//         if (response.ok) {
-//             alert(`Produto com ID ${productId} excluído com sucesso`);
-//             const productElement = document.querySelector(`.product[data-id="${productId}"]`);
-//             if (productElement) {
-//                 productElement.remove();
-//             }
-//         } else {
-//             alert('Erro ao excluir o produto');
-//         }
-//     })
-//     .catch(error => {
-//         console.error('Erro na solicitação:', error);
-//     });
-// }
-
-
-
-
-
 

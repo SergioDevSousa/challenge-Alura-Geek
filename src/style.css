@@ -1,4 +1,4 @@
-/* cabeça~lho */
+/* cabeçalho */
 
 .cabecalho-title {
     background-color: #5300C8;
@@ -28,8 +28,8 @@ img {
 
 .principal-container {
     display: contents;
-    width: 758px;
-    height: 1115px;
+    width: 100%;
+    height: auto;
     padding: 40px;
     overflow-y: scroll;
 }
@@ -59,30 +59,26 @@ img {
 .card {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
-    /* gap: 35px; */
-    width: 196px;
-    min-height: 258px;
+    max-width: 196px;
+    width: 100%;
+    height: 258px;
     background-color: #5300C8;
     border-radius: 10px;
     border: black solid 2px;
-    max-height: 50vh;
 }
 
-.img-container img{
+.img-container{
     width: 100%;
     height: auto;
+    border-radius: 3px solid black;
     gap: 0px;
     opacity: 0px;
-
 }
 
 .card img {
     border-radius: 5px;
     width: 100%;
     height: auto;
-    /* background-color: transparent;
-    border: transparent; */
 }
 
 .card-container--info {
@@ -91,14 +87,16 @@ img {
     font-family: "IBM Plex Mono", monospace;
     font-size: 15px;
     font-weight: 400;
-    height: 19px;
     color: #f9f9f9;
-    padding-bottom: 30%;
+    gap: 10px;
+    
 }
 .card-container--info p{
-    align-items: center;
+    text-align: center;
 }
-.card-container--value {
+.card-container--value{
+    width: 176px;
+    height: 24px;
     display: flex;
     justify-content: space-around;
     gap: 10px;
@@ -120,12 +118,10 @@ img {
 .delete-button img {
     /* background-color: #5300C8; */
     border: transparent;
-    width: 24px;
-    height: 24px;
+    width: 3vh;
+    /* height: 1.5vw; */
     cursor: pointer;
-    position: absolute;
-
-
+    /* position: absolute; */
 }
 /* formulario */
 .formulario h1 {
@@ -146,8 +142,8 @@ form input {
     flex-direction: column;
     box-shadow: 0px -10px 9.5px rgba(0, 0, 0, 0.25);
     gap: 10px;
-    width: 600px;
-    height: 517px;
+    width: 100%;
+    height: auto;
     padding: 40px;
     gap: 40px;
     border-radius: 20px;
@@ -162,7 +158,7 @@ form input {
 .btn-formulario-container {
     display: flex;
     justify-content: space-between;
-    height: 55px;
+    height: 8vh;
     gap: 13px;
 }
 
@@ -174,7 +170,7 @@ form input {
     font-family: "IBM Plex Mono", monospace;
     background: #03318c;
     color: white;
-    width: 450px;
+    width: 100%;
     border-radius: 15px;
     font-size: 20px;
 }
@@ -198,36 +194,30 @@ form input {
     background-color: #5300C8;
     box-shadow: 0px -10px 9.5px rgba(0, 0, 0, 0.25);
     text-align: center;
-    /* Centraliza o texto dentro dos elementos */
     width: 100%;
     height: 232px;
 }
 
 .footer-logo img {
     margin-top: 20px;
-    width: 374px;
-    /* Garante que a imagem não exceda a largura do contêiner */
-    height: 56px;
-    /* Mantém a proporção da imagem */
+    width: 100%;
+    height: auto;
 }
 
 .footer-dev {
     margin-top: 10px;
-    /* Espaçamento entre a logo e o texto */
     font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
     font-size: 16px;
     height: 16px;
     color: #f9f9f9;
-    width: 1440px;
-    height: 232px;
+    width: 100%;
+    height: auto;
 }
 
 .footer-dev span {
     display: block;
-    /* Garante que os spans fiquem em linhas separadas */
     margin-top: 5px;
-    /* Espaçamento entre as linhas de texto */
     font-family: "IBM Plex Mono", monospace;
     font-weight: 200;
     font-size: 24px;
