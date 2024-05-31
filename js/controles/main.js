@@ -1,5 +1,7 @@
 import { serviceProduts } from "../servicos/products-services.js";
 
+
+
 const productContainer = document.querySelector("[data-products]");
 const form = document.querySelector("[data-form]");
 const deleteButtons = document.querySelector("[data-id]");
@@ -9,7 +11,7 @@ function createElement(name, price, image, id) {
     card.classList.add("card");
 
     card.innerHTML = `
-        <div class="card">
+        <div>
             <div class="img-container">
                 <img src="${image}" alt="${name}">
             </div>
