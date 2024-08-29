@@ -1,11 +1,11 @@
 const productList = () => {
-    return fetch ("https://665882315c3617052648c8b8.mockapi.io/api/geek/products/")
+    return fetch ("https://665882315c3617052648c8b8.mockapi.io/geek/products")
     .then((res) => res.json())
     .catch((err) => console(err));
 }
 
 const creatProduct = (name, price, image) => {
-    return fetch ("https://665882315c3617052648c8b8.mockapi.io/api/geek/products/" , {
+    return fetch ("https://665882315c3617052648c8b8.mockapi.io/geek/products" , {
         method: "POST",
         headers: {
             "content-Type": "application/json",
@@ -20,7 +20,7 @@ const creatProduct = (name, price, image) => {
     .catch((err) => console.log(err));
 }
 const deleteProduct = (id) => {
-    return fetch(`https://665882315c3617052648c8b8.mockapi.io/api/geek/products/${id}`, {
+    return fetch(`https://665882315c3617052648c8b8.mockapi.io/geek/products${id}`, {
         method: 'DELETE',
         headers: {
             "Content-Type": "application/json",
