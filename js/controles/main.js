@@ -76,7 +76,7 @@ form.addEventListener("submit", async (event) => {
 
 const deleteProduct = async (id) => {
     try {
-        const response = await fetch(`https://665882315c3617052648c8b8.mockapi.io/geek/products${id}`, {
+        const response = await fetch(`https://665882315c3617052648c8b8.mockapi.io/geek/products/${id}`, {
             method: 'DELETE',
         });
 

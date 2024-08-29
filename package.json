@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js"
   },
-  "apiUrl": "https://665882315c3617052648c8b8.mockapi.io/api/geek/products",
+  "apiUrl": "https://665882315c3617052648c8b8.mockapi.io/geek/products",
   "keywords": [],
   "author": "",
   "license": "ISC"
